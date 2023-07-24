@@ -1,0 +1,84 @@
+body {
+    background-color: #222;
+}
+.distruct {
+
+    font-family: 'Fascinate', cursive;
+
+    width: 340px;
+    height: 340px;
+    margin: 100px auto;
+
+    /* border: 1px dotted green; */
+    padding: 30px;
+
+    position: relative;
+}
+
+.distruct h2 {
+    font-size: 60px;
+    color: orange;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.distruct h3 {
+    font-size: 40px;
+    color: orangered;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.distruct .square {
+    width: 360px;
+    height: 360px;
+    border: 20px solid rgb(95, 64, 7);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.distruct .tl-corner {
+    width: 250px;
+    height: 250px;
+    border: 30px solid burlywood;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    filter: drop-shadow(0 0 5px #000);
+}
+.distruct .br-corner {
+    width: 250px;
+    height: 250px;
+    border: 30px solid burlywood;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+
+    filter: drop-shadow(0 0 5px #000);
+}
+.distruct {
+    perspective: 1000px;
+}
+.distruct .tl-corner {
+    transform: translateX(-25px) translateY(-25px) translateZ(150px);
+}
+.distruct .br-corner {
+    transform: translateX(25px) translateY(25px) translateZ(150px);
+}
+.distruct .square {
+    transform: translateZ(-300px);
+}
+.distruct h2 {
+    transform: translateZ(100px) translateY(-35px) translateX(-20px);
+}
+.distruct h3 {
+    transform: translateZ(100px) translateY(75px) translateX(100px);
+}
